@@ -55,7 +55,7 @@ export default function Settings({ widgets }) {
             <ItemSettings widgets={widgets} />
           </TabPane>
         )}
-        <TabPane tab="表单配置" key={showItemSettings ? '2' : '1'}>
+        <TabPane tab="Form Configuration" key={showItemSettings ? '2' : '1'}>
           <GlobalSettings widgets={widgets} />
         </TabPane>
       </Tabs>

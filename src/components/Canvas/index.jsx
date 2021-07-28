@@ -75,22 +75,22 @@ const Canvas = () => {
               setGlobal({ selected: '#' });
             }}
           >
-            {preview ? '开始编辑' : '最终展示'}
+            {preview ? 'Edit' : 'Preview'}
           </Button>
         )}
         {_showDefaultBtns[1] !== false && (
           <Button className="mr2" onClick={clearSchema}>
-            清空
+            Clear
           </Button>
         )}
         {_showDefaultBtns[2] !== false && (
           <Button className="mr2" onClick={toggleModal2}>
-            导入
+            Import Schema
           </Button>
         )}
         {_showDefaultBtns[3] !== false && (
           <Button type="primary" className="mr2" onClick={toggleModal}>
-            导出schema
+            Export Schema
           </Button>
         )}
         {_extraBtns.map((item, idx) => {
